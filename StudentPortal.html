@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<style>
+			.wrapper{
+				text-align: center;
+				padding-top: 15px;
+				}
+		</style>
+	</header>
+	<body>
+  		<h2 style = "color: blue ; text-align: center">The Student Portal </h2>
+		<form>
+			<table align = "center">
+				<br><br>
+				<tr ><td>Full Name:</td> <td><textarea id = "Name"  name = "fullname"  cols = "50" rows="1" ></textarea></td></tr>
+				<tr ><td>Age:</td> <td><textarea id = "Age" name = "phonenumber"  cols = "10" rows="1"></textarea></td></tr>
+				<tr ><td>Your University:</td> <td><textarea id = "School" name = "Your University"  cols = "50" rows="1"></textarea></td></tr>
+				<tr ><td>Your Phone Number:</td> <td><textarea id = "Phonenumber" name = "Your Number"  cols = "35" rows="1"></textarea></td></tr>
+			</table>
+		<div class = "wrapper">
+			<button  onclick="othername();"> Submit </button>
+		</div>
+		</form>
+	
+		<script>
+			function othername() {
+				var student = {};
+    			student.name = document.getElementById("Name").value;
+				student.age = document.getElementById("Age").value;
+				student.phone = document.getElementById("Phonenumber").value;
+				student.school = document.getElementById("School").value;
+    			alert("Name: " + student.name + " | Age: " + student.age + " | University: " + student.school + " | Phone Number: " + student.phone);
+			}
+		</script>
+   
+	</body>
+</html>
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Factorial Calculator</title>
+</head>
+
+<body>
+
+		<h1 style = "text-align: center; color: #A65792; padding-top: 40px">The Factorial Calculator</h1>
+	<center>
+		<form>
+			Input Number: <input type="text" id = "x" style = "padding-left: 20px; padding-right: 30px; color: #0D0D44 " >
+			<br><br>
+		</form>
+			<button onclick="document.getElementById('pr').innerHTML = numbb()">Enter</button>
+
+		<h3>The factorial is </h3> 
+		<b id = "pr" style= "color: #A65792"></b>
+	</center>
+
+	<script>
+		function numbb(){
+			var numb = document.getElementById("x").value;
+			var fact =1;
+			for(var n = numb; n>0; n--){
+			fact = fact*n;
+			}
+			return fact;
+		}
+
+
+
+
+	</script>
+</body>
+</html>
